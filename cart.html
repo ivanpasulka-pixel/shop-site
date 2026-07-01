@@ -3,700 +3,406 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Корзина и оформление заказа SKIPLE|STORE.">
-<meta name="theme-color" content="#111111">
+<meta name="description" content="Корзина — SKIPLE|STORE">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%8D%EF%B8%8F%3C/text%3E%3C/svg%3E">
-<title>Корзина - SKIPLE|STORE</title>
+<title>Корзина — SKIPLE|STORE</title>
 
 
-<style type="text/css">@font-face {font-family:Anton;font-style:normal;font-weight:400;src:url(/cf-fonts/s/anton/5.2.7/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Anton;font-style:normal;font-weight:400;src:url(/cf-fonts/s/anton/5.2.7/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Anton;font-style:normal;font-weight:400;src:url(/cf-fonts/s/anton/5.2.7/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}</style>
+<style type="text/css">@font-face {font-family:Anton;font-style:normal;font-weight:400;src:url(/cf-fonts/s/anton/5.2.7/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Anton;font-style:normal;font-weight:400;src:url(/cf-fonts/s/anton/5.2.7/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Anton;font-style:normal;font-weight:400;src:url(/cf-fonts/s/anton/5.2.7/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:Manrope;font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
 <style>
-:root {
-  --bg: #0b0b0f;
-  --panel: rgba(255,255,255,0.08);
-  --panel-strong: rgba(255,255,255,0.12);
-  --text: #010814;
-  --muted: rgba(245,247,251,0.68);
-  --line: rgba(255,255,255,0.1);
-  --accent: #ff4f8b;
-  --accent-2: #8f7cff;
-  --danger: #ff5f57;
-  --ok: #30d158;
-  --radius-xl: 28px;
-  --radius-lg: 22px;
-  --radius-md: 16px;
-  --shadow: 0 20px 60px rgba(0,0,0,0.35);
-  --container: 1140px;
+:root{
+  --bg:#0b0b0f;
+  --panel:rgba(255,255,255,.07);
+  --panel-hover:rgba(255,255,255,.11);
+  --text:#f0f2f8;
+  --muted:rgba(240,242,248,.62);
+  --line:rgba(255,255,255,.09);
+  --accent:#ff4f8b;
+  --accent2:#8f7cff;
+  --ok:#30d158;
+  --danger:#ff5f57;
+  --shadow:0 20px 60px rgba(0,0,0,.4);
+  --r-xl:28px;--r-lg:22px;--r-md:16px;
 }
-
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: "Manrope", Arial, sans-serif;
-  color: var(--text);
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Manrope",Arial,sans-serif;
+  color:var(--text);
   background:
-    radial-gradient(circle at top left, rgba(143,124,255,0.22), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(255,79,139,0.18), transparent 30%),
-    linear-gradient(180deg, #0b0b0f, #12131a 45%, #0b0b0f);
+    radial-gradient(circle at 15% 0%,rgba(143,124,255,.2) 0%,transparent 30%),
+    radial-gradient(circle at 90% 100%,rgba(255,79,139,.18) 0%,transparent 30%),
+    #0b0b0f;
+  min-height:100vh;
 }
-img { display: block; max-width: 100%; }
-a { color: inherit; }
-button, input, textarea { font: inherit; }
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
-.container {
-  width: min(calc(100% - 32px), var(--container));
-  margin: 0 auto;
+.wrap{width:min(calc(100% - 32px),1100px);margin:0 auto}
+.display{font-family:"Anton",Arial,sans-serif;font-weight:400;letter-spacing:1.5px}
+
+/* topbar */
+.topbar{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:24px 0 20px;flex-wrap:wrap;
 }
-
-.display {
-  font-family: "Anton", Arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: 1.4px;
+.pill{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--line);background:var(--panel);
+  color:var(--text);padding:11px 15px;border-radius:999px;
+  cursor:pointer;transition:.22s ease;white-space:nowrap;
 }
+.pill:hover{background:var(--panel-hover);transform:translateY(-1px)}
 
-.page {
-  padding: 28px 0 48px;
+/* page title */
+.page-title{font-size:clamp(38px,7vw,72px);margin-bottom:8px}
+.page-sub{color:var(--muted);font-size:15px;margin-bottom:24px;max-width:580px;line-height:1.55}
+
+/* layout */
+.layout{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:start}
+
+/* cart items */
+.cart-panel{
+  border:1px solid var(--line);background:var(--panel);
+  border-radius:var(--r-xl);padding:20px;
 }
-
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 22px;
+.cart-list{display:grid;gap:14px}
+.cart-item{
+  display:grid;grid-template-columns:90px 1fr auto;
+  gap:14px;align-items:center;
+  border:1px solid var(--line);background:rgba(255,255,255,.04);
+  border-radius:var(--r-lg);padding:14px;
+  transition:.2s ease;
 }
-
-.back-link,
-.top-link {
-  text-decoration: none;
-  border: 1px solid var(--line);
-  background: var(--panel);
-  padding: 12px 16px;
-  border-radius: 999px;
-  transition: 0.2s ease;
+.cart-item:hover{background:rgba(255,255,255,.07)}
+.cart-item img{
+  width:90px;height:90px;object-fit:cover;
+  border-radius:15px;background:rgba(255,255,255,.05);flex-shrink:0;
 }
-
-.back-link:hover,
-.top-link:hover {
-  background: var(--panel-strong);
+.item-info h3{font-size:17px;margin-bottom:5px}
+.item-info p{color:var(--muted);font-size:13px;line-height:1.5}
+.item-controls{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.qty-box{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1px solid var(--line);background:rgba(255,255,255,.05);
+  border-radius:999px;padding:5px 8px;
 }
-
-.page-title {
-  margin: 0 0 12px;
-  font-size: clamp(40px, 7vw, 74px);
+.qty-btn{
+  width:34px;height:34px;border-radius:50%;border:none;
+  background:rgba(255,255,255,.09);color:var(--text);
+  cursor:pointer;transition:.18s ease;font-size:18px;
+  display:grid;place-items:center;
 }
-
-.page-subtitle {
-  margin: 0;
-  color: var(--muted);
-  max-width: 620px;
+.qty-btn:hover{background:rgba(255,255,255,.18)}
+.qty-val{min-width:22px;text-align:center;font-weight:800}
+.remove-btn{
+  padding:9px 13px;border-radius:13px;border:none;
+  background:rgba(255,95,87,.14);color:#ffd5d3;
+  cursor:pointer;font-size:13px;font-weight:700;transition:.18s ease;
 }
-
-.layout {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 22px;
-  margin-top: 28px;
+.remove-btn:hover{background:rgba(255,95,87,.28)}
+.empty-cart{
+  padding:28px;border:1px dashed rgba(255,255,255,.14);
+  border-radius:var(--r-lg);text-align:center;color:var(--muted);
 }
+.empty-cart a{color:var(--text);font-weight:700}
 
-.panel {
-  border: 1px solid var(--line);
-  background: var(--panel);
-  backdrop-filter: blur(18px);
-  box-shadow: var(--shadow);
-  border-radius: var(--radius-xl);
+/* right panel */
+.right-col{display:grid;gap:18px}
+.summary-panel,.form-panel{
+  border:1px solid var(--line);background:var(--panel);
+  border-radius:var(--r-xl);padding:22px;
 }
-
-.cart-panel {
-  padding: 18px;
+.panel-title{font-size:20px;margin-bottom:16px}
+.summary-row{
+  display:flex;justify-content:space-between;gap:12px;
+  padding:10px 0;border-bottom:1px solid rgba(255,255,255,.07);
+  color:var(--muted);font-size:15px;
 }
-
-.cart-list {
-  display: grid;
-  gap: 14px;
+.summary-row:last-of-type{border-bottom:none}
+.summary-total{font-size:30px;font-weight:800;margin:16px 0 0}
+.clear-btn{
+  width:100%;margin-top:14px;padding:13px;border-radius:var(--r-md);border:none;
+  background:rgba(255,255,255,.07);color:var(--text);
+  border:1px solid var(--line);cursor:pointer;font-weight:700;transition:.2s ease;
 }
+.clear-btn:hover{background:rgba(255,255,255,.13)}
 
-.cart-item {
-  display: grid;
-  grid-template-columns: 88px 1fr auto;
-  gap: 14px;
-  align-items: center;
-  border: 1px solid rgba(255,255,255,0.15);
-  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.06));
-  border-radius: 22px;
-  padding: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1);
+/* form */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.input-group{display:grid;gap:7px}
+.input-group.full{grid-column:1/-1}
+label{font-size:13px;color:var(--muted)}
+input,textarea{
+  width:100%;border-radius:14px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.06);
+  color:var(--text);padding:13px 15px;
+  transition:.2s ease;
 }
-
-
-.cart-item img {
-  width: 88px;
-  height: 88px;
-  object-fit: cover;
-  border-radius: 18px;
-  background: rgba(255,255,255,0.04);
+input:focus,textarea:focus{
+  border-color:rgba(255,255,255,.28);
+  background:rgba(255,255,255,.09);
+  outline:none;
 }
-
-.cart-item h3 {
-  margin: 0 0 6px;
-  font-size: 18px;
+textarea{min-height:100px;resize:vertical}
+.payment-note{
+  color:var(--muted);font-size:13px;
+  margin-bottom:14px;line-height:1.55;
 }
-
-.cart-item p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
+.submit-btn,.pay-btn{
+  width:100%;border:none;border-radius:var(--r-md);
+  padding:15px 18px;font-weight:800;cursor:pointer;
+  transition:.22s ease;margin-bottom:10px;
 }
-
-.item-controls {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-end;
+.submit-btn{
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff;
 }
-
-.qty-box {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.04);
-  border-radius: 999px;
-  padding: 6px;
+.pay-btn{
+  background:linear-gradient(135deg,#fff,#dde2ff);
+  color:#111;
 }
+.submit-btn:hover,.pay-btn:hover{transform:translateY(-2px)}
+button:disabled{opacity:.5;cursor:not-allowed;transform:none!important}
 
-.qty-btn,
-.remove-btn,
-.clear-btn,
-.submit-btn,
-.pay-btn {
-  border: none;
-  cursor: pointer;
-  transition: 0.2s ease;
+/* notice */
+.notice{
+  display:none;padding:13px 15px;border-radius:var(--r-md);
+  font-size:14px;font-weight:700;margin-bottom:14px;line-height:1.5;
 }
+.notice.ok{background:rgba(48,209,88,.12);color:#c5ffe0}
+.notice.err{background:rgba(255,95,87,.14);color:#ffd5d3}
 
-.qty-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.08);
-  color: var(--text);
+/* responsive */
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
 }
-
-.qty-btn:hover,
-.remove-btn:hover,
-.clear-btn:hover,
-.submit-btn:hover,
-.pay-btn:hover {
-  transform: translateY(-1px);
-}
-
-.qty-value {
-  min-width: 24px;
-  text-align: center;
-  font-weight: 800;
-}
-
-.remove-btn {
-  padding: 10px 14px;
-  border-radius: 14px;
-  background: rgba(255,95,87,0.14);
-  color: #ffd5d3;
-}
-
-.summary-panel,
-.form-panel {
-  padding: 22px;
-}
-
-.summary-card {
-  border: 1px solid rgba(255,255,255,0.15);
-  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.06));
-  border-radius: 22px;
-  padding: 18px;
-  margin-bottom: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.summary-card h2,
-.form-panel h2 {
-  margin-top: 0;
-}
-
-.summary-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  color: var(--muted);
-}
-
-.summary-row:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.summary-total {
-  font-size: 28px;
-  font-weight: 800;
-  margin: 18px 0 0;
-}
-
-.clear-btn,
-.submit-btn,
-.pay-btn {
-  width: 100%;
-  border-radius: 16px;
-  padding: 15px 18px;
-  font-weight: 800;
-}
-
-.clear-btn {
-  background: rgba(255,255,255,0.08);
-  color: var(--text);
-  border: 1px solid var(--line);
-}
-
-.form-panel {
-  display: grid;
-  gap: 14px;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.input-group {
-  display: grid;
-  gap: 8px;
-}
-
-.input-group.full {
-  grid-column: 1 / -1;
-}
-
-label {
-  font-size: 14px;
-  color: var(--muted);
-}
-
-input,
-textarea {
-  width: 100%;
-  border-radius: 16px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.04);
-  color: var(--text);
-  padding: 14px 15px;
-}
-
-textarea {
-  min-height: 110px;
-  resize: vertical;
-}
-
-.payment-note {
-  color: var(--muted);
-  font-size: 14px;
-  margin-top: -4px;
-}
-
-.submit-btn {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: white;
-}
-
-.pay-btn {
-  background: linear-gradient(135deg, #ffffff, #d4daf8);
-  color: #111;
-}
-
-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none !important;
-}
-
-.empty {
-  padding: 26px;
-  border: 1px dashed rgba(255,255,255,0.16);
-  border-radius: 22px;
-  text-align: center;
-  color: var(--muted);
-}
-
-.empty a {
-  color: white;
-}
-
-.notice {
-  padding: 14px 16px;
-  border-radius: 16px;
-  background: rgba(48,209,88,0.12);
-  color: #d7ffe2;
-  display: none;
-}
-
-.notice.error {
-  background: rgba(255,95,87,0.14);
-  color: #ffd5d3;
-}
-
-@media (max-width: 920px) {
-  .layout,
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .cart-item {
-    grid-template-columns: 1fr;
-  }
-
-  .item-controls {
-    align-items: flex-start;
-  }
+@media(max-width:600px){
+  .cart-item{grid-template-columns:1fr;gap:10px}
+  .item-controls{align-items:flex-start}
 }
 </style>
 </head>
 <body>
-  <main class="page">
-    <div class="container">
-      <div class="topbar">
-        <a class="back-link" href="index.html">← Назад в магазин</a>
-        <a class="top-link" href="https://t.me/NeverYork2" target="_blank" rel="noopener noreferrer">✈️ Telegram</a>
-      </div>
+<div class="wrap">
+  <div class="topbar">
+    <a class="pill" href="index.html">← Назад в магазин</a>
+    <a class="pill" href="https://t.me/NeverYork2" target="_blank" rel="noopener">✈️ Telegram</a>
+  </div>
 
-      <h1 class="page-title display">Корзина</h1>
-      <p class="page-subtitle">Проверь товары, укажи данные для доставки и оформи заказ за пару минут.</p>
+  <h1 class="page-title display">Корзина</h1>
+  <p class="page-sub">Проверь товары, укажи данные — и оформи заказ за пару минут.</p>
 
-      <div class="layout">
-        <section class="panel cart-panel">
-          <div class="cart-list" id="cartList"></div>
-        </section>
+  <div class="layout">
+    <!-- LEFT: cart items -->
+    <section class="cart-panel">
+      <div class="cart-list" id="cartList"></div>
+    </section>
 
-        <aside>
-          <section class="panel summary-panel">
-            <div class="summary-card">
-              <h2>Сводка заказа</h2>
-              <div class="summary-row"><span>Товаров</span><strong id="summaryCount">0</strong></div>
-              <div class="summary-row"><span>Позиции</span><strong id="summaryLines">0</strong></div>
-              <div class="summary-total" id="summaryTotal">0 грн</div>
-            </div>
-            <button type="button" class="clear-btn" id="clearCartBtn">Очистить корзину</button>
-          </section>
+    <!-- RIGHT: summary + form -->
+    <aside class="right-col">
 
-          <section class="panel form-panel">
-            <h2>Оформление заказа</h2>
-            <div class="notice" id="noticeBox"></div>
+      <section class="summary-panel">
+        <div class="panel-title display">Сводка</div>
+        <div class="summary-row"><span>Позиций</span><strong id="sumLines">0</strong></div>
+        <div class="summary-row"><span>Товаров</span><strong id="sumCount">0</strong></div>
+        <div class="summary-total" id="sumTotal">0 грн</div>
+        <button type="button" class="clear-btn" id="clearBtn">Очистить корзину</button>
+      </section>
 
-            <div class="form-grid">
-              <div class="input-group">
-                <label for="name">Имя</label>
-                <input id="name" autocomplete="name" placeholder="Например, Андрей">
-              </div>
-              <div class="input-group">
-                <label for="phone">Телефон</label>
-                <input id="phone" type="tel" autocomplete="tel" placeholder="+380...">
-              </div>
-              <div class="input-group">
-                <label for="city">Город</label>
-                <input id="city" autocomplete="address-level2" placeholder="Киев">
-              </div>
-              <div class="input-group">
-                <label for="post">Отделение Новой Почты</label>
-                <input id="post" placeholder="Например, №12">
-              </div>
-              <div class="input-group full">
-                <label for="comment">Комментарий</label>
-                <textarea id="comment" placeholder="Размерные уточнения, пожелания по доставке и т.д."></textarea>
-              </div>
-            </div>
+      <section class="form-panel">
+        <div class="panel-title display">Оформление заказа</div>
+        <div class="notice" id="notice"></div>
 
-            <p class="payment-note">Сначала заказ уходит владельцу магазина. Если выберешь оплату на банку, после успешной отправки откроется ссылка на оплату.</p>
+        <div class="form-grid">
+          <div class="input-group">
+            <label for="name">Имя</label>
+            <input id="name" autocomplete="name" placeholder="Например, Андрей">
+          </div>
+          <div class="input-group">
+            <label for="phone">Телефон</label>
+            <input id="phone" type="tel" autocomplete="tel" placeholder="+380...">
+          </div>
+          <div class="input-group">
+            <label for="city">Город</label>
+            <input id="city" autocomplete="address-level2" placeholder="Киев">
+          </div>
+          <div class="input-group">
+            <label for="post">Отделение Новой Почты</label>
+            <input id="post" placeholder="Например, №12">
+          </div>
+          <div class="input-group full">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" placeholder="Уточнения по размеру, доставке и т.д."></textarea>
+          </div>
+        </div>
 
-            <button type="button" class="submit-btn" id="cashBtn">Заказать с оплатой при получении</button>
-            <button type="button" class="pay-btn" id="monoBtn">Оплатить сразу на Monobank</button>
-          </section>
-        </aside>
-      </div>
-    </div>
-  </main>
+        <p class="payment-note">После отправки заказ сразу уходит владельцу магазина. Если выберешь оплату на банку — откроется ссылка Monobank.</p>
+
+        <button type="button" class="submit-btn" id="cashBtn">Заказать с оплатой при получении</button>
+        <button type="button" class="pay-btn" id="monoBtn">Оплатить сразу на Monobank</button>
+      </section>
+
+    </aside>
+  </div>
+</div>
 
 <script src="products.js"></script>
 <script>
-const API_URL = "/send-order";
+// ─── ВАЖНО ───────────────────────────────────────────────────────────────────
+// API_URL указан как полный адрес localhost:3000, чтобы сайт работал
+// через любой Run / Live Server в VS Code без дополнительных настроек.
+// Перед деплоем на хостинг замени на относительный путь: "/send-order"
+// ─────────────────────────────────────────────────────────────────────────────
+const API_URL  = "http://localhost:3000/send-order";
 const MONO_URL = "https://send.monobank.ua/jar/3gUg3tUjvs";
-const CART_KEY = "cart";
+const CART_KEY = "skiple_cart";
 
-const cartList = document.getElementById("cartList");
-const summaryCount = document.getElementById("summaryCount");
-const summaryLines = document.getElementById("summaryLines");
-const summaryTotal = document.getElementById("summaryTotal");
-const noticeBox = document.getElementById("noticeBox");
-const clearCartBtn = document.getElementById("clearCartBtn");
-const cashBtn = document.getElementById("cashBtn");
-const monoBtn = document.getElementById("monoBtn");
+function load(key,fb){ try{ return JSON.parse(localStorage.getItem(key))||fb }catch{ return fb } }
+function save(key,v){ localStorage.setItem(key,JSON.stringify(v)) }
+function getCart(){ return load(CART_KEY,[]).filter(i=>i&&i.id&&findProduct(i.id)) }
 
-function safeParse(key, fallback) {
-  try {
-    return JSON.parse(localStorage.getItem(key)) || fallback;
-  } catch {
-    return fallback;
+let cart = getCart();
+function saveCart(){ save(CART_KEY,cart) }
+
+/* summary */
+function updateSummary(){
+  let total=0, count=0;
+  cart.forEach(i=>{ const p=findProduct(i.id); if(!p) return; total+=p.price*i.qty; count+=i.qty; });
+  document.getElementById("sumLines").textContent = cart.length;
+  document.getElementById("sumCount").textContent = count;
+  document.getElementById("sumTotal").textContent = total+" грн";
+  const empty = cart.length===0;
+  document.getElementById("clearBtn").disabled = empty;
+  document.getElementById("cashBtn").disabled  = empty;
+  document.getElementById("monoBtn").disabled  = empty;
+}
+
+/* render */
+function render(){
+  const list = document.getElementById("cartList");
+  list.innerHTML="";
+  if(!cart.length){
+    list.innerHTML=`<div class="empty-cart">Корзина пустая. <a href="index.html">Вернуться в каталог</a></div>`;
+    updateSummary(); return;
   }
-}
-
-let cart = safeParse(CART_KEY, []).filter((item) => item && item.id && findProduct(item.id));
-
-function saveCart() {
-  localStorage.setItem(CART_KEY, JSON.stringify(cart));
-}
-
-function formatPrice(value) {
-  return `${value} грн`;
-}
-
-function getTotals() {
-  let total = 0;
-  let count = 0;
-
-  cart.forEach((item) => {
-    const product = findProduct(item.id);
-    if (!product) return;
-    total += product.price * item.qty;
-    count += item.qty;
-  });
-
-  return {
-    total,
-    count,
-    lines: cart.length
-  };
-}
-
-function setNotice(message, isError = false) {
-  noticeBox.textContent = message;
-  noticeBox.style.display = "block";
-  noticeBox.classList.toggle("error", isError);
-}
-
-function clearNotice() {
-  noticeBox.textContent = "";
-  noticeBox.style.display = "none";
-  noticeBox.classList.remove("error");
-}
-
-function renderCart() {
-  cartList.innerHTML = "";
-
-  if (!cart.length) {
-    cartList.innerHTML = `
-      <div class="empty">
-        Корзина пока пустая. <a href="index.html">Вернуться в каталог</a>
+  cart.forEach((item,idx)=>{
+    const p = findProduct(item.id);
+    if(!p) return;
+    const line = p.price * item.qty;
+    const sizeLabel = item.size ? `Размер: ${item.size} · ` : "";
+    const el = document.createElement("div");
+    el.className="cart-item";
+    el.innerHTML=`
+      <img src="${p.images[0]}" alt="${p.name}">
+      <div class="item-info">
+        <h3>${p.name}</h3>
+        <p>${sizeLabel}${p.price} грн × ${item.qty} = <strong>${line} грн</strong></p>
       </div>
-    `;
-  } else {
-    cart.forEach((item, index) => {
-      const product = findProduct(item.id);
-      if (!product) return;
-
-      const lineTotal = product.price * item.qty;
-      const sizeLabel = item.size ? `Размер: ${item.size}` : "Без выбора размера";
-
-      const row = document.createElement("article");
-      row.className = "cart-item";
-      row.innerHTML = `
-        <img src="${product.images[0]}" alt="${product.name}">
-        <div>
-          <h3>${product.name}</h3>
-          <p>${sizeLabel}</p>
-          <p>${product.price} грн x ${item.qty} = ${lineTotal} грн</p>
+      <div class="item-controls">
+        <div class="qty-box">
+          <button class="qty-btn" data-a="dec" data-i="${idx}">−</button>
+          <span class="qty-val">${item.qty}</span>
+          <button class="qty-btn" data-a="inc" data-i="${idx}">+</button>
         </div>
-        <div class="item-controls">
-          <div class="qty-box">
-            <button type="button" class="qty-btn" data-action="dec" data-index="${index}">-</button>
-            <span class="qty-value">${item.qty}</span>
-            <button type="button" class="qty-btn" data-action="inc" data-index="${index}">+</button>
-          </div>
-          <button type="button" class="remove-btn" data-action="remove" data-index="${index}">Удалить</button>
-        </div>
-      `;
-      cartList.appendChild(row);
-    });
-  }
-
-  const totals = getTotals();
-  summaryCount.textContent = String(totals.count);
-  summaryLines.textContent = String(totals.lines);
-  summaryTotal.textContent = formatPrice(totals.total);
-
-  clearCartBtn.disabled = !cart.length;
-  cashBtn.disabled = !cart.length;
-  monoBtn.disabled = !cart.length;
-}
-
-cartList.addEventListener("click", (event) => {
-  const btn = event.target.closest("[data-action]");
-  if (!btn) return;
-
-  const index = Number(btn.dataset.index);
-  const action = btn.dataset.action;
-  const item = cart[index];
-  if (!item) return;
-
-  if (action === "inc") {
-    item.qty += 1;
-  } else if (action === "dec") {
-    item.qty -= 1;
-    if (item.qty <= 0) {
-      cart.splice(index, 1);
-    }
-  } else if (action === "remove") {
-    cart.splice(index, 1);
-  }
-
-  saveCart();
-  renderCart();
-});
-
-clearCartBtn.addEventListener("click", () => {
-  cart = [];
-  saveCart();
-  clearNotice();
-  renderCart();
-});
-
-function buildOrderText() {
-  let total = 0;
-  const lines = [];
-
-  cart.forEach((item) => {
-    const product = findProduct(item.id);
-    if (!product) return;
-
-    const lineTotal = product.price * item.qty;
-    total += lineTotal;
-    const sizeLabel = item.size ? ` (${item.size})` : "";
-    lines.push(`${product.name}${sizeLabel} x ${item.qty} - ${lineTotal} грн`);
+        <button class="remove-btn" data-a="rm" data-i="${idx}">Удалить</button>
+      </div>`;
+    list.appendChild(el);
   });
-
-  return {
-    total,
-    items: lines.join("\n")
-  };
+  updateSummary();
 }
 
-function validateForm() {
-  const name = document.getElementById("name").value.trim();
+document.getElementById("cartList").addEventListener("click",e=>{
+  const btn = e.target.closest("[data-a]");
+  if(!btn) return;
+  const i=+btn.dataset.i, a=btn.dataset.a;
+  if(a==="inc") cart[i].qty++;
+  else if(a==="dec"){ cart[i].qty--; if(cart[i].qty<=0) cart.splice(i,1); }
+  else if(a==="rm") cart.splice(i,1);
+  saveCart(); render();
+});
+
+document.getElementById("clearBtn").addEventListener("click",()=>{ cart=[]; saveCart(); render(); });
+
+/* notice */
+function showNotice(msg, isErr=false){
+  const el = document.getElementById("notice");
+  el.textContent=msg;
+  el.className="notice "+(isErr?"err":"ok");
+  el.style.display="block";
+}
+function hideNotice(){ document.getElementById("notice").style.display="none"; }
+
+/* checkout */
+function validate(){
+  const name  = document.getElementById("name").value.trim();
   const phone = document.getElementById("phone").value.trim();
-  const city = document.getElementById("city").value.trim();
-  const post = document.getElementById("post").value.trim();
-  const comment = document.getElementById("comment").value.trim();
-
-  if (!cart.length) {
-    return { ok: false, message: "Корзина пустая." };
-  }
-
-  if (!name || !phone || !city || !post) {
-    return { ok: false, message: "Заполни имя, телефон, город и отделение Новой Почты." };
-  }
-
-  const phoneDigits = phone.replace(/\D/g, "");
-  if (phoneDigits.length < 10) {
-    return { ok: false, message: "Введи корректный телефон." };
-  }
-
-  return {
-    ok: true,
-    data: { name, phone, city, post, comment }
-  };
+  const city  = document.getElementById("city").value.trim();
+  const post  = document.getElementById("post").value.trim();
+  if(!cart.length)         return {ok:false,msg:"Корзина пустая."};
+  if(!name||!phone||!city||!post) return {ok:false,msg:"Заполни имя, телефон, город и отделение НП."};
+  if(phone.replace(/\D/g,"").length<10) return {ok:false,msg:"Введи корректный номер телефона."};
+  return {ok:true, data:{name,phone,city,post, comment:document.getElementById("comment").value.trim()}};
 }
 
-function toggleButtons(disabled, activeButton, loadingText) {
-  [cashBtn, monoBtn, clearCartBtn].forEach((button) => {
-    button.disabled = disabled;
+function buildItems(){
+  let total=0, lines=[];
+  cart.forEach(i=>{
+    const p=findProduct(i.id); if(!p) return;
+    const lt=p.price*i.qty; total+=lt;
+    lines.push(`${p.name}${i.size?` (${i.size})`:""} × ${i.qty} = ${lt} грн`);
   });
-
-  if (activeButton) {
-    if (disabled) {
-      activeButton.dataset.originalText = activeButton.textContent;
-      activeButton.textContent = loadingText;
-    } else if (activeButton.dataset.originalText) {
-      activeButton.textContent = activeButton.dataset.originalText;
-      delete activeButton.dataset.originalText;
-    }
-  }
+  return {total, items:lines.join("\n")};
 }
 
-async function checkout(paymentMethod, activeButton) {
-  clearNotice();
+function lockButtons(active, label){
+  [document.getElementById("cashBtn"),document.getElementById("monoBtn"),document.getElementById("clearBtn")]
+    .forEach(b=>b.disabled=true);
+  if(active){ active._orig=active.textContent; active.textContent=label; }
+}
+function unlockButtons(active){
+  [document.getElementById("cashBtn"),document.getElementById("monoBtn"),document.getElementById("clearBtn")]
+    .forEach(b=>b.disabled=false);
+  if(active&&active._orig) active.textContent=active._orig;
+}
 
-  const validation = validateForm();
-  if (!validation.ok) {
-    setNotice(validation.message, true);
-    return;
-  }
-
-  const order = buildOrderText();
-  const payload = {
-    ...validation.data,
-    paymentMethod,
-    items: order.items,
-    total: order.total
-  };
-
-  try {
-    toggleButtons(true, activeButton, "Отправка...");
-
-    const response = await fetch(API_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
+async function checkout(payMethod, btn){
+  hideNotice();
+  const v=validate();
+  if(!v.ok){ showNotice(v.msg,true); return; }
+  const order=buildItems();
+  lockButtons(btn,"Отправка...");
+  try{
+    const res = await fetch(API_URL,{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({...v.data, paymentMethod:payMethod, items:order.items, total:order.total})
     });
-
-    const data = await response.json();
-
-    if (!response.ok || !data.success) {
-      throw new Error(data.reason || "email-error");
-    }
-
-    setNotice("Заказ успешно отправлен. Скоро с тобой свяжутся.");
-    cart = [];
-    saveCart();
-    renderCart();
-
-    if (paymentMethod === "Оплата на Monobank Банку") {
-      window.location.href = MONO_URL;
-    }
-  } catch (error) {
-    if (error.message === "no-credentials") {
-      setNotice("На сервере не настроена почта. Проверь EMAIL_USER и EMAIL_PASS.", true);
-    } else if (error.message === "email-error") {
-      setNotice("Сервер не смог отправить письмо. Проверь пароль приложения Gmail.", true);
-    } else if (error.message === "invalid-data" || error.message === "invalid-phone" || error.message === "invalid-cart") {
-      setNotice("Проверь заполнение формы и состав корзины.", true);
-    } else {
-      setNotice("Не удалось отправить заказ. Проверь, что сервер запущен и доступен.", true);
-    }
-  } finally {
-    toggleButtons(false, activeButton);
+    const data = await res.json();
+    if(!res.ok||!data.success) throw new Error(data.reason||"email-error");
+    showNotice("✅ Заказ отправлен! Скоро с тобой свяжутся.");
+    cart=[]; saveCart(); render();
+    if(payMethod==="Оплата на Monobank") window.location.href=MONO_URL;
+  } catch(err){
+    const msgs={
+      "no-credentials":"На сервере не настроена почта (.env).",
+      "email-error":"Сервер не смог отправить письмо. Проверь пароль Gmail.",
+      "invalid-data":"Проверь заполнение формы.",
+    };
+    showNotice(msgs[err.message]||"Ошибка соединения. Проверь, что сервер запущен на порту 3000.", true);
+  } finally{
+    unlockButtons(btn);
   }
 }
 
-cashBtn.addEventListener("click", () => checkout("Оплата при получении", cashBtn));
-monoBtn.addEventListener("click", () => checkout("Оплата на Monobank Банку", monoBtn));
+document.getElementById("cashBtn").addEventListener("click",function(){ checkout("Оплата при получении",this) });
+document.getElementById("monoBtn").addEventListener("click",function(){ checkout("Оплата на Monobank",this) });
 
-renderCart();
+render();
 </script>
 </body>
 </html>
